@@ -1,0 +1,456 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===================
+ FOR ALL CONTENT
+====================== */
+
+.content {
+  text-align: center;
+  margin: 70px auto;
+}
+.content h6 {
+  font-weight: bold;
+  font-style: inherit;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.content h6:before {
+  content: "";
+  top: 50%;
+  /* margin-top: -20px; */
+  margin-left: 560px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 3px;
+  background: #dc3445;
+  display: block;
+}
+.content span {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+/* ==========================
+    NAVBAR SECTION START
+=========================== */
+.navbar {
+  padding: 30px;
+  transition: 1s;
+}
+.navbar.scroll {
+  background: #fff !important;
+}
+.navbar.scroll .navbar-brand {
+  color: #000 !important;
+}
+.navbar.scroll .nav-link {
+  color: #000 !important;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 40px;
+  padding-left: 220px;
+  color: #fff !important;
+}
+.navbar-nav {
+  padding-left: 400px;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+/* ==========================
+   NAVBAR SECTION END
+=========================== */
+/* ==========================
+    HEADER SECTION START
+============================== */
+.header {
+  margin: 0;
+  padding: 0;
+}
+.header .vid-parent {
+  position: relative;
+}
+.header video {
+  height: 100%;
+  width: 100%;
+}
+.header .vid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0.4;
+}
+.header .vid-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff !important;
+}
+.header .vid-content h6 {
+  font-weight: bold;
+  font-size: 100px;
+  margin: 30px auto;
+}
+.header .vid-content h6:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #dc3445;
+  width: 250px;
+  height: 10px;
+}
+.header .vid-content span {
+  font-weight: bold;
+  font-size: 30px;
+}
+.header .svg-arrow-down {
+  position: relative;
+  top: -150px;
+}
+.header svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff !important;
+  z-index: 2;
+  animation: svgarrowmove 1s linear infinite;
+}
+/* ======================
+KEYFRAMES SECTION
+========================= */
+@keyframes svgarrowmove {
+  0% {
+    top: 30px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+
+/*=========================
+ About Us Section Start
+ ===========================*/
+.about-us {
+  margin: 400px auto;
+  position: relative;
+}
+.about-us img {
+  height: 350px;
+}
+.about-us .row {
+  margin-top: 100px;
+}
+.about-us .custom-col span {
+  /* font-style: italic; */
+  font-family: monospace;
+  font-size: 30px;
+  font-weight: bold;
+}
+.about-us .custom-col p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.about-us ul {
+  margin-left: -45px;
+}
+.about-us .custom-col li {
+  display: inline-block;
+  margin: 5px 15px;
+}
+.about-us .custom-button {
+  position: relative;
+}
+.about-us .custom-col button {
+  font-weight: bold;
+  margin: 0 10px;
+  width: 200px;
+  transition: 1s ease-out;
+}
+.about-us .custom-col button:hover {
+  background: none;
+  color: #dc3445 !important;
+}
+.about-us .second-row h5 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px auto;
+}
+.about-us span {
+  opacity: 0.8;
+}
+
+/* =======================
+  SERVICES SECTION START
+ =========================*/
+.services {
+  margin-bottom: 400px;
+}
+.services .box {
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5),
+    inset 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  margin-bottom: 80px;
+  transition: 0.8s ease-in;
+  /* color: #dc3445; */
+}
+.services .box:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+}
+.services .box h6 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 25px;
+  margin: 10px auto;
+}
+.services .box span {
+  font-weight: 600;
+  opacity: 0.8;
+  font-style: italic;
+  font-size: 13px;
+}
+/* Services Svg Box */
+.services .svg-box {
+  border: 2px solid #dc3445;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 10px 100px;
+  transition: 1s ease-in-out;
+}
+.services .svg-box:hover {
+  background: #dc3445;
+  color: #fff !important;
+}
+
+/*===========================
+  COUNTER SECTION START 
+ ===========================*/
+#second-header {
+  margin-bottom: 400px;
+}
+.second-header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.second-header .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.second-header .img-content {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.counter-section-start {
+  margin-bottom: 200px;
+  padding: 30px;
+  color: #fff !important;
+  cursor: pointer;
+}
+.counter-section-start svg {
+  filter: grayscale(0);
+  border-radius: 45%;
+  padding: 15px;
+  transition: 0.5s;
+  border: 10px solid #3498db;
+}
+
+.counter-section-start .box {
+  margin: 140px auto;
+}
+/* =========================
+  COUNTER SECTION END
+ ===========================*/
+
+/* =====================
+ PORTFOLIO SECTION START
+ ========================*/
+
+#portfolio {
+  margin-bottom: 400px;
+}
+.portfolio-content h6::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 200px;
+  background: #dc3445;
+  display: block;
+  margin-left: 590px;
+}
+.portfolio-content {
+  text-align: center;
+  margin: 60px auto;
+}
+.portfolio-content h6 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.portfolio-content span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.portfolio .team {
+  margin-bottom: 400px;
+}
+
+.team-item,
+.team-wrap,
+.team-content,
+.team-content-social {
+  transition: all 0.4s ease-in-out;
+}
+
+.team-item {
+  position: relative;
+  border-radius: 0.1875rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 0 0 30px;
+}
+
+.team-item img {
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+.team-wrap {
+  background: rgba(216, 207, 207, 0.8);
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.team-content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.team-name {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #000 !important;
+  margin-bottom: 2px;
+}
+
+.team-item:hover {
+  transform: translateY(-3px);
+}
+
+.team-item:hover .team-wrap {
+  opacity: 1;
+}
+
+.team-item:hover .team-content,
+.team-item:hover .team-content-social {
+  transform: translateY(0);
+}
+.portfolio .col-sm-4 {
+  margin-top: 80px;
+}
+
+/* ============================
+   PORTFOLIO SECTION END
+  ================================*/
+
+/* =============================
+   TESTIMONAIL SECTION START
+  ============================== */
+.testimonail {
+  margin-bottom: 400px;
+  position: relative;
+}
+
+.testimonail .row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonail img {
+  width: 160px !important;
+  height: 160px;
+  border-radius: 50%;
+  margin-left: 270px;
+}
+.testimonail .testimonail_content {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff !important;
+}
+.testimonail .testimonail_content h6 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+}
+.testimonail .testimonail_content span {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+/* ================================
+  TESTIMONAIL SECTION END
+   ==================================*/
+
+/* Contact us Section Start */
+.contact {
+  margin-bottom: 400px;
+  /* text-align: center; */
+}
+.contact .second {
+  margin-top: 30px !important;
+}
+
+/* Contact us Section End */
+
+/* Footer Section Start */
+footer {
+  background: #000;
+  padding: 80px;
+}
+footer a {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: #fff !important;
+}
+/* Footer Section End */
